@@ -1,0 +1,10 @@
+<!-- <h1>Imma show you a band</h1> -->
+<div id='container'>
+      <p> BAND! </p>
+
+      <p>Bandname: <%= @band.name %></p>
+
+
+      <p> <%= render 'band', band: @band %> </p>
+      <p><a href='<%= bands_url %>'>Back to the Bands!</a> </p>
+  </div>

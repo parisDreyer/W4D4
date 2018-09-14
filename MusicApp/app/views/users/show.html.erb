@@ -1,0 +1,11 @@
+<!-- <h1>Imma show you a user</h1> -->
+<div id='container'>
+      <p> WELCOME! </p>
+
+      <p>Username: <%= @user.username %></p>
+
+      <p>Email: <%= @user.email %> </p>
+
+      <p> <%= render 'user', user: @user %> </p>
+      <p><a href='<%= users_url %>'>Back to the Users!</a> </p>
+  </div>

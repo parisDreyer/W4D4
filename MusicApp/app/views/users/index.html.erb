@@ -1,0 +1,10 @@
+<h1>ALL the users</h1>
+<ul>
+  <% @users.each do |other_user| %>
+    <li>
+      <p><%= user_interaction(other_user) %></p>
+      <%= render 'user', user: other_user %>
+    </li>
+    <br>
+  <% end %>
+</ul>

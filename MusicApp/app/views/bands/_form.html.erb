@@ -1,0 +1,31 @@
+<% if type == :new %>
+<% button_val = "Create!" %>
+<% action_url = bands_url %>
+<% elsif type == :edit %>
+<% button_val = "Edit!" %>
+<% action_url = band_url %>
+<%elsif type == :login %>
+<% button_val = "Login" %>
+<% action_url = session_url %>
+<% end %>
+
+
+<form action="<%= action_url %>" method="post">
+  <% if type == :edit %>
+  <input type="hidden" name="_method" value="patch">
+  <% end %>
+  <%= authentication %>
+
+
+  <label for='bandname'>Bandname:</label>
+  <input type="text" id="name" name="band[name]"
+  value="<%=band.name %>">
+  <br>
+
+  <label for="band_member_name">Band Member Name:</label>
+  <input type="text" id="bane_member_name" name="band[band_member_name]">
+  <br>
+
+  <input type="submit" value="<%= button_val %>">
+
+</form>

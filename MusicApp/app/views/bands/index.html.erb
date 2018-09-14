@@ -1,0 +1,9 @@
+<h1>ALL the bands</h1>
+<ul>
+  <% @bands.each do |other_band| %>
+    <li>
+      <%= render 'band', band: other_band %>
+    </li>
+    <br>
+  <% end %>
+</ul>

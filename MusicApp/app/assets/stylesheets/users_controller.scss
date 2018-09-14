@@ -1,0 +1,16 @@
+// Place all the styles related to the users_controller controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.user {
+  border: solid 1px #000;
+  text-align: center;
+}
+#container {
+    border: solid 1px #000;
+    float:left;
+    padding-left: 20px;
+    margin-left: 50%;
+    display: inline-block;
+    vertical-align: top;
+}
